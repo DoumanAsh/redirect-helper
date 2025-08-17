@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+    height: auto;
+}
+
+body {
+    font-size: 25px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.title {
+    text-align: center;
+    margin: 5px;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    overflow-x: auto;
+}
+
+#table th, #table td {
+    text-align: left;
+    padding: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 0;
+}
+
+#table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#table tr.header, tr:hover {
+    background-color: #f1f1f1;
+}
+
+#table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr.table_row:hover {
+    cursor: pointer;
+    background-color: teal !important;
+}
